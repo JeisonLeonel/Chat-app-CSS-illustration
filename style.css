@@ -1,0 +1,95 @@
+:root{
+    --Pale-Violet: hsl(276, 100%, 81%);
+    --Moderate-Violet: hsl(276, 55%, 52%);
+    --Desaturated-Dark-Violet: hsl(271, 15%, 43%);
+    --Grayish-Blue: hsl(206, 6%, 79%);
+    --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+    --Dark-Grayish-Violet: hsl(270, 7%, 64%);
+    --gradient1: hsl(293, 100%, 63%);
+    --gradient2: hsl(264, 100%, 61%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grayish-Violet:hsl(270, 20%, 96%);
+    --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+    --Very-Light-Magenta: hsl(289, 100%, 72%);
+    --font-family:'Rubik', sans-serif; 
+}
+body{
+    font-size: 16px;
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.figura{
+    width: 500px;
+    height: 550px;
+    position: absolute;
+    background: linear-gradient(0deg,var(--gradient2) 5%, var(--gradient1));
+    z-index: -1;
+    border-radius: 0 0 300px 300px;
+    left: -5%;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.container {
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    padding-top:15px ;
+    padding-left: 200px;
+}
+.container .phone {
+    width: 350px;
+    height: 580px;
+    min-height: 580px !important;
+    min-width: 350px;
+    background-color: var(--Light-Grayish-Violet);
+    border: 10px solid white;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 8px 8px 40px -11px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 40px -11px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 40px -11px rgba(66, 68, 90, 1);
+}
+.phone header{
+    width: 100%;
+    background: linear-gradient(90deg,var(--gradient2),var(--gradient1));
+    height: 70px;
+    border-radius: 25px 25px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 15px;
+}
+.phone header .perfil{
+    width: 95%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.phone header .perfil h1{
+    font-size: 13px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.phone header .perfil p{
+    font-size: 0.6em;
+    color:var(--Pale-Violet);
+}
+
+.phone header .perfil img{
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 0 10px;
+}
