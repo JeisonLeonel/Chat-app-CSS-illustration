@@ -45,10 +45,10 @@ main{
     padding-left: 200px;
 }
 .container .phone {
-    width: 350px;
-    height: 580px;
-    min-height: 580px !important;
-    min-width: 350px;
+    width: 300px;
+    height: 560px;
+    min-height: 560px !important;
+    min-width: 300px;
     background-color: var(--Light-Grayish-Violet);
     border: 10px solid white;
     border-radius: 35px;
@@ -69,22 +69,35 @@ main{
     position: relative;
     margin-bottom: 15px;
 }
+.phone header #white{
+    position: absolute;
+    width: 200px;
+    height: 25px;
+    background-color: white;
+    top: -10%;
+    border-radius: 0 0 15px 15px;
+}
 .phone header .perfil{
-    width: 95%;
-    height: 80px;
+    width: 85%;
+    height: 45px;
     display: flex;
     justify-content: flex-start;
+    padding-top: 20px;
     align-items: center;
 }
+.phone header .perfil .id{
+    line-height: -0px;
+    text-align: center;
+}
 .phone header .perfil h1{
-    font-size: 13px;
+    font-size: 0.8em;
     color: white;
     font-weight: 600;
-    letter-spacing: 1px;
 }
 .phone header .perfil p{
     font-size: 0.6em;
     color:var(--Pale-Violet);
+    padding-right: 10px;
 }
 
 .phone header .perfil img{
@@ -92,4 +105,156 @@ main{
     border-radius: 50%;
     border: 2px solid white;
     margin: 0 10px;
+}
+.phone header .tres-puntos{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    color: white;
+}
+.phone .chat-left{
+    max-width: 55%;
+    font-size: 10px;
+    background-color: hsl(284, 57%, 91%);
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    border-radius: 10px 10px 10px 5px;
+    margin-left: 10px;
+    color: var(--Moderate-Violet);
+}
+.phone .chat-right-img{
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    margin-right: 10px;
+    margin-left: auto;
+    margin-bottom: 10px
+}
+.phone .chat-right-img img {
+    object-fit: contain;
+    height: 45px;
+    border-radius: 10px
+}
+.phone .chat-right{
+    max-width: 55%;
+    font-size: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    border-radius: 10px 10px 5px 10px;
+    margin-right: 10px;
+    margin-left: 120px;
+    color: var(--Desaturated-Dark-Violet);
+    -webkit-box-shadow: 0px 8px 46px -14px rgb(66 68 90);
+    -moz-box-shadow: 0px 8px 46px -14px rgba(66, 68, 90, 1);
+    box-shadow: 0px 8px 46px -14px rgb(66 68 90);
+}
+.phone .radio-left{
+    width: 70%;
+    height: 20px;
+    font-size: 10px;
+    background: linear-gradient(90deg,var(--gradient1),var(--gradient2));
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    border-radius: 10px 10px 10px 5px;
+    margin-left: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.phone .radio-left .radio {
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid white;
+    opacity: 0.5;
+}
+.phone .radio-left .precio{
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 10px;
+    margin-left: auto;
+}
+.phone .last{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+} 
+.phone .last input{
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    padding-left: 20px;
+}
+.phone .last button{
+    margin-right: 5px;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    border-radius: 30px;
+    border: none;
+    height: 30px;
+    width: 30px;
+    background-color: var(--Very-Dark-Desaturated-Violet);
+}
+.phone .last button i{
+    width: 3px;
+    height: 3px;
+    color: white;
+    padding-top: 4px;
+    padding-right: 10px;
+}
+.text-right{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    justify-content: center;
+}
+.text-right h1{
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--Very-Dark-Desaturated-Violet);
+    margin-bottom: 20px;
+}
+.text-right p{
+    font-size: 16px;
+    color: var(--Dark-Grayish-Violet);
+    line-height: 25px;
+}
+@media (max-width: 800px) {
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        height: auto;
+        min-width: 0;
+        max-width: 1000px;
+    }
+    .phone{
+        width: 90%;
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    .figura{
+        width: 300px;
+        height: 600px;
+        border-radius: 0 0 300px 300px;
+        left: -15%;
+    }
+    .text-right{
+        align-items: center;
+        margin-left: 0px;
+        text-align: center;
+    }
 }
